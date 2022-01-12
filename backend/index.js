@@ -10,8 +10,7 @@ MongoClient.connect(
   process.env.RESTREVIEWS_DB_URI,
   {
     maxPoolSize: 50,
-    wtimeoutMS: 2500,
-    userNewUrlParse: true
+    wtimeoutMS: 2500
   }
 )
 .catch(err => {

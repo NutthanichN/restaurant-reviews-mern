@@ -21,8 +21,8 @@ class RestaurantDataService {
     return axiosClient.put("/review", data);
   }
 
-  deleteReview(id) {
-    return axiosClient.delete(`/review?id=${id}`);
+  deleteReview(id, userId) {
+    return axiosClient.delete(`/review?id=${id}`, {data: {user_id: userId}});
   }
 
   getCuisines(id) {

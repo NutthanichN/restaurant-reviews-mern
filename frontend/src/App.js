@@ -51,7 +51,7 @@ function App() {
       {<div className="container mt-3">
         <Routes>
           <Route path="/" element={<RestaurantsList/>} />
-          <Route path="restaurants" element={<RestaurantsList/>} />
+          <Route path="/restaurants" element={<RestaurantsList/>} />
           <Route path="/restaurants/:id/review" element={
             <AddReview props user={user} />
           }/>
